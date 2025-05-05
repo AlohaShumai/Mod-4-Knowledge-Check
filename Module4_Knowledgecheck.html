@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 4 HTML Assignment</title>
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      gap: 15px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    form, table, img {
+      margin-top: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    th {
+      background-color: #f4f4f4;
+    }
+
+    .rounded {
+      border-radius: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Form -->
+  <form>
+    <h2>Contact Us</h2>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+    <!-- Raddio button group -->
+    <p>How did you find us?</p>
+    <input type="radio" id="yelp" name="referral" value="Yelp">
+    <label for="yelp">Yelp</label><br>
+
+    <input type="radio" id="instagram" name="referral" value="Instagram">
+    <label for="instagram">Instagram</label><br><br>
+
+    <input type="radio" id="twitter" name="referral" value="Twitter">
+    <label for="twitter">Twitter</label><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Product Table (Star wars ships) -->
+  <table>
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>X wing</td>
+        <td>$150</td>
+        <td>53</td>
+      </tr>
+      <tr>
+        <td>Tie Interceptor</td>
+        <td>$215</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eta-2 Interceptor</td>
+        <td>$130</td>
+        <td>15</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Adding Image -->
+  <h2>Our Product Gallery</h2>
+  <img src="https://placehold.co/300x200" alt="Placeholder Image"><br><br>
+
+  <!-- Adding the second image with a rounded border using style attribute -->
+  <img src="https://placehold.co/300x200" alt="Rounded Placeholder" style="border-radius: 15px;">
+
+</body>
+</html>
+
+
